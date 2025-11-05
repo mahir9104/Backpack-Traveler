@@ -7,12 +7,6 @@ A modern and responsive travel website designed for adventure lovers. Showcasing
 ---
 
 
-## 🌍 Preview
-![Backpack Traveler Preview](images/preview.jpg)
-
----
-
-
 ## 🔗 Live Demo
 [View Live](https://yourusername.github.io/backpack-traveler)
 
