@@ -61,5 +61,4 @@ Backpack-Traveler/
 
 **Mahir panchal** 
 - Frontend Developer | Full-Stack Web Development 
-- Learner [GitHub](https://github.com/mahir9104) | [LinkedIn](https://www.linkedin.com/in/    
-  mahir-panchal-052232331/)
+- [GitHub](https://github.com/mahir9104) | [LinkedIn](https://www.linkedin.com/in/mahir-panchal-052232331/)
