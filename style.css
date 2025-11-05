@@ -1,0 +1,757 @@
+:root {
+  --text-gray: #959595;
+  --text-dark: #000;
+  --text-light: #f7775e;
+  --bg-light: #f7f2ee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html body {
+  width: 100%;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.69em;
+  letter-spacing: .1em;
+
+}
+
+
+/* ***************  navbar  ****************/
+
+.navbar {
+ min-height: min-content;
+}
+
+.navbar .container {
+  width: 90%;
+}
+
+.navbar-brand img {
+  display: block;
+  height: 100%;
+  width: 50%;
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+  box-shadow: none !important;
+  padding: 0.25rem 0.35rem;
+  font-size: 1rem;
+}
+
+.nav-link {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-size: small;
+}
+
+.nav-link:hover {
+  color: var(--text-light);
+}
+
+.navbar-toggler-icon {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.btn-close {
+  filter: invert(65%) sepia(51%) saturate(557%) hue-rotate(330deg) brightness(104%) contrast(95%);
+  opacity: 1;
+}
+
+.nav-link-first {
+  color: var(--text-light) !important;
+}
+
+
+/* ***************   hero section  ****************/
+
+.hero {
+  margin-top: 12vh;
+  width: 97%;
+}
+
+.zoom-effect {
+  transform: scale(1.2);
+  transition: transform 5s ease;
+  height: 80vh;
+  object-fit: cover;
+}
+
+.carousel-item.active .zoom-effect {
+  transform: scale(1);
+}
+
+.slide-qoute {
+  position: absolute;
+  top: 0rem;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.655);
+}
+
+.slide-qoute h1,
+.slide-qoute h2 {
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  opacity: 0;
+}
+
+.slide-qoute h1 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  transform: scale(0.8);
+  animation: zoomInText 1s ease forwards;
+  font-family: "Great Vibes", cursive;
+}
+
+.slide-qoute h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #f7775e;
+  letter-spacing: 2px;
+  transform: translateY(20px);
+  animation: slideUpText 1s ease forwards;
+  animation-delay: 0.5s;
+  font-family: "Parisienne", cursive;
+}
+
+
+@keyframes zoomInText {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideUpText {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.hero-card {
+  height: 35vh;
+  width: 80%;
+}
+
+.hero-card:hover {
+  border: 1px solid var(--text-gray);
+}
+
+.hero-card-contain {
+  line-height: .3em;
+}
+
+.hero-card-contain p {
+  color: var(--text-gray);
+  font-size: x-small;
+}
+
+
+
+/* ***************   destination section  ****************/
+
+.desti-head h3 {
+  letter-spacing: .2em;
+  font-weight: 400;
+}
+
+.desti-head p {
+  letter-spacing: 0;
+  font-family: "Lora", serif;
+  color: var(--text-gray);
+  text-transform: capitalize;
+  font-size: 1.1em;
+  width: 80%;
+  line-height: 1.7em;
+}
+
+.desti-card {
+  width: 80%;
+  height: auto;
+  border: 1px solid var(--text-gray);
+}
+
+.desti-card-contain img {
+  height: 35vh;
+}
+
+.desti-card-contain h4 {
+  font-family: "Great Vibes", cursive;
+}
+
+.desti-card-contain p {
+  color: var(--text-gray);
+  font-size: .8em;
+  line-height: 1.7em;
+}
+
+.desti-card-footer button {
+  font-size: .9em;
+  width: 70%;
+  outline: 1px solid var(--text-gray);
+  transition: all .3s;
+}
+
+.desti-card-footer button:hover {
+  background-color: var(--text-dark);
+  color: var(--bg-light);
+}
+
+
+/* ***************   guides section  ****************/
+.guides {
+  background-color: var(--bg-light);
+  margin-top: 8rem;
+}
+
+.guides-head h3 {
+  letter-spacing: .2em;
+  font-weight: 500;
+  font-size: 1.2em
+}
+
+.guides-head p {
+  letter-spacing: 0;
+  font-family: "Lora", serif;
+  color: var(--text-gray);
+  font-size: 1.1em;
+  width: 80%;
+  line-height: 1.7em;
+}
+
+.guide-card-h4 {
+  font-family: "Great Vibes", cursive;
+  position: absolute;
+  left: 8%;
+  transform: rotate(-10deg);
+  font-weight: 600;
+}
+
+.guide-card-h4-2 {
+  font-family: "Great Vibes", cursive;
+  position: absolute;
+  left: 8%;
+  transform: rotate(-10deg);
+  font-weight: 600;
+}
+
+.guide-card img {
+  transition: all .3s;
+}
+
+.guide-card img:hover {
+  transform: translateY(-10%);
+}
+
+
+/* ***************   stories section  ****************/
+.stories-head h3 {
+  letter-spacing: .2em;
+  font-weight: 500;
+  font-size: 1.2em;
+  width: 70%;
+
+}
+
+.stories-head span {
+  color: var(--text-light);
+  line-height: 2.2em;
+}
+
+.stories-head p {
+  letter-spacing: 0;
+  font-family: "Lora", serif;
+  color: var(--text-gray);
+  font-size: 1.1em;
+  width: 75%;
+  line-height: 1.7em;
+}
+
+.stories-main-card {
+  border: 1px solid var(--text-gray);
+  width: 80%;
+}
+
+.stories-m-c-contain h4 {
+  font-family: "Great Vibes", cursive;
+}
+
+.stories-m-c-contain h5 {
+  width: 70%;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.stories-m-c-contain p {
+  font-size: x-small;
+  color: var(--text-light);
+}
+
+.stories-m-c-footer p {
+  width: 80%;
+  font-family: "Lora", serif;
+  color: var(--text-gray);
+}
+
+.stories-m-c-footer h5 {
+  font-size: small;
+}
+
+.stories-right-card {
+  width: 80%;
+  border: 1px solid var(--text-gray);
+}
+
+.stories-r-c-contain h4 {
+  font-family: "Great Vibes", cursive;
+}
+
+.stories-r-c-contain h5 {
+  font-size: 1.2em;
+
+}
+
+.stories-r-c-contain p {
+  color: var(--text-gray);
+  font-size: x-small;
+}
+
+.stories-right-c-text {
+  width: 80%;
+  border: 1px solid var(--text-gray);
+}
+
+.stories-r-c-text h6 {
+  font-size: small;
+  width: 80%;
+}
+
+.stories-r-c-text p {
+  font-size: x-small;
+  color: var(--text-gray);
+}
+
+.s-r-c-hr hr {
+  width: 80%;
+}
+
+
+/* ***************   world section  ****************/
+.world-head h3 {
+  letter-spacing: .2em;
+  font-weight: 500;
+  font-size: 1.2em;
+  width: 80%;
+}
+
+.world-head p {
+  width: 80%;
+  font-family: "Lora", serif;
+  color: var(--text-gray);
+}
+
+.world-head span {
+  color: var(--text-light);
+  font-weight: 400;
+}
+
+.world-footer {
+  width: 80%;
+}
+
+.world-right-main img {
+  width: 80%;
+}
+
+.world-right-contain {
+  transform: translateY(-20%);
+}
+
+.world-right-contain img {
+  width: 65%;
+  border: 5px solid var(--bg-light);
+}
+
+.world-right-contain p {
+  font-family: "Great Vibes", cursive;
+  font-weight: 600;
+  font-size: larger;
+}
+
+
+/* ***************   essentials section  ****************/
+.assentials {
+  background-color: var(--bg-light);
+}
+
+.assentials h3 {
+  letter-spacing: .2em;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.assentials p {
+  width: 80%;
+  font-family: "Lora", serif;
+  color: var(--text-gray);
+}
+
+.ass-img img {
+  transition: all .3s;
+}
+
+.ass-img img:hover {
+  transform: translateY(-10%);
+}
+
+.line {
+  border-top: 1px solid var(--text-gray);
+  width: 21%;
+  margin-top: .4rem;
+
+}
+
+.footer-head h6 {
+  color: var(--text-gray);
+  font-size: x-small;
+}
+
+.footer-icon p {
+  color: var(--text-gray);
+  font-size: x-small;
+}
+
+.footer-btn-1 button {
+  width: 60%;
+  height: 6vh;
+  font-size: small;
+  background-color: transparent;
+  color: var(--text-dark);
+  transition: all .3s;
+}
+
+.footer-btn-1 button:hover {
+  background-color: var(--text-dark);
+  color: var(--bg-light);
+}
+
+.footer-btn-2 button {
+  width: 60%;
+  height: 6vh;
+  font-size: small;
+  background-color: var(--text-dark);
+  color: var(--bg-light);
+  transition: all .3s;
+}
+
+.footer-btn-2 button:hover {
+  background-color: transparent;
+  color: var(--text-dark);
+
+}
+
+
+@media (orientation: landscape) {
+  .navbar {
+    min-height: min-content;
+  }
+
+  .footer-contain-3 button {
+    min-height: min-content;
+  }
+
+}
+
+
+@media(min-width : 768px) {
+
+  .navbar-brand img {
+    transform: translateX(-70%);
+  }
+
+  .desti-card {
+    width: 80%;
+  }
+
+  .guide-card-h4 {
+    left: -9%;
+  }
+
+  .guide-card-h4-2 {
+    left: 16%;
+  }
+
+  .stories-head h3 {
+    font-size: 1.7em;
+  }
+
+  .stories-r-c-contain h4 {
+    font-size: 1.6em !important;
+  }
+
+  .world-head h3 {
+    font-size: 1.6em;
+  }
+
+  .world-right-contain p {
+    font-size: 1.2em;
+  }
+
+}
+
+
+@media (orientation: landscape) {
+  .navbar {
+    position: static;
+  }
+  
+  .footer-contain-3 button {
+    min-height: min-content;
+  }
+
+}
+
+
+
+
+@media(min-width : 992px) {
+  .navbar-brand img {
+    transform: translateX(20%);
+    width: 70%;
+  }
+
+  .guides-head h3 {
+    font-size: 1.7em;
+    font-weight: 400;
+  }
+
+  .guide-card-h4 {
+    left: 2%;
+  }
+
+  .guide-card-h4-2 {
+    left: -10%;
+  }
+
+  .stories-head h3 {
+    font-size: 1.7em;
+    font-weight: 400;
+  }
+
+  .stories-r-c-contain h4 {
+    font-size: 1.9em !important;
+  }
+
+  .world-head h3 {
+    font-size: 2em;
+    font-weight: 400;
+    width: 80%;
+  }
+  .world-right-main{
+    width: 75%;
+  }
+  .world-right-main img {
+    width: 60%;
+  }
+
+  .world-right-contain img {
+    width: 45%;
+    margin-top: -7em;
+    transform: translateX(20%);
+  }
+
+  .world-right-contain p {
+    font-size: 1.3em;
+  }
+  .assentials-head h3{
+    font-size: 1.7em;
+    font-weight: 400;
+  }
+  .footer-contain-3 button {
+    height: 7vh;
+  }
+
+  .footer-btn-2 button {
+    height: 7vh;
+  }
+}
+
+@media(min-width : 1200px) {
+
+  .navbar-brand img {
+    transform: translateX(30%);
+    width: 60%;
+  }
+
+  .desti-card {
+    width: 100%;
+  }
+
+  .desti-card-contain h4 {
+    font-size: xx-large !important;
+  }
+
+  .guides-head h3 {
+    font-size: 1.7em;
+    font-weight: 400;
+  }
+
+  .guide-card-h4 {
+    left: 2%;
+  }
+
+  .guide-card-h4-2 {
+    left: -10%;
+  }
+
+  .stories-head h3 {
+    font-size: 1.7em;
+    font-weight: 400;
+  }
+
+  .stories-r-c-contain h4 {
+    font-size: 1.9em !important;
+  }
+
+  .world-head h3 {
+    font-size: 1.7em;
+    font-weight: 400;
+  }
+
+  .world-right-main img {
+    width: 60%;
+  }
+
+  .world-right-contain img {
+    width: 60%;
+    transform: translateY(-30%);
+  }
+
+  .world-right-contain p {
+    font-size: 1.7em;
+  }
+
+  .assentials-head h3 {
+    font-size: 1.7em;
+    font-weight: 400;
+  }
+
+  .footer-contain-3 button {
+    height: 7vh;
+    word-spacing: .3em;
+  }
+
+  .footer-btn-2 button {
+    height: 7vh;
+  }
+
+}
+
+
+@media(min-width : 1400px) {
+  .navbar {
+    height: 13vh;
+    
+  }
+
+  .navbar-brand img {
+    transform: translateX(30%);
+    width: 60%;
+  }
+
+  .hero h1 {
+    font-size: 4em;
+  }
+
+  .hero h2 {
+    font-size: 3em;
+  }
+
+  .desti-card-contain h4 {
+    font-size: xx-large !important;
+  }
+
+  .guides-head h3 {
+    font-size: 1.7em;
+    font-weight: 400;
+  }
+  .guide-card img{
+    width: 100% !important;
+  }
+  .guide-card-h4 {
+    left: -18%;
+    font-size: 1.8em !important;
+  }
+
+  .guide-card-h4-2 {
+    left: -18%;
+    font-size: 1.8em !important;
+  }
+
+  .stories-head h3 {
+    font-size: 1.7em;
+    font-weight: 400;
+  }
+  .stories-main-card{
+    width: 100%;
+  }
+  .stories-right-card{
+    width: 100%;
+  }
+  .stories-r-c-head img{
+    height: 42.4vh;
+    width: 100%;
+  }
+  .stories-right-c-text{
+    width: 100%;
+  }
+  .stories-r-c-contain h4 {
+    font-size: 1.9em !important;
+  }
+
+  .world-head h3 {
+    font-size: 1.7em;
+    font-weight: 400;
+  }
+  
+  .world-right-main img {
+    width: 60%;
+    
+  }
+
+  .world-right-contain img {
+    width: 60%;
+    transform: translateY(-30%);
+    margin-top: 0em;
+  }
+
+  .world-right-contain p {
+    font-size: 1.3em;
+  }
+
+  .assentials-head h3 {
+    font-size: 1.7em;
+    font-weight: 400;
+  }
+
+  .footer-contain-3 button {
+    height: 7vh;
+    word-spacing: .3em;
+  }
+
+  .footer-btn-2 button {
+    height: 7vh;
+  }
+}
